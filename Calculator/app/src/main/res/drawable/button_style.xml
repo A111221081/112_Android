@@ -1,0 +1,41 @@
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 點擊狀態 -->
+    <item
+        android:state_pressed="true">
+        <!--基本可以畫出長方形、橢圓形、圓環以及線條等等的類型-->
+        <shape
+            android:shape="oval">
+            <!--設定邊角弧度-->
+            <corners
+                android:radius="10dip" />
+            <!--邊框框線-->
+            <stroke
+                android:width="1dip"
+                android:color="#538394" />
+            <!--漸層顏色-->
+            <gradient
+                android:angle="90"
+                android:startColor="#EEA9A9"
+                android:endColor="#FEDFE1"  />
+        </shape>
+    </item>
+
+    <!-- 尚未點擊時 -->
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle" >
+            <solid
+                android:color="@android:color/black" />
+            <corners
+                android:radius="50dp" />
+            <stroke
+                android:width="1dip"
+                android:color="#071E54" />
+            <gradient
+                android:angle="-90"
+                android:startColor="#CC543A"
+                android:endColor="#B9887D"  />
+        </shape>
+    </item>
+
+</selector>
