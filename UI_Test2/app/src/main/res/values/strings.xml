@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UI_Test2</string>
+    <string name="inputHere">輸入資料</string>
+    <string name="send">確認</string>
+</resources>
