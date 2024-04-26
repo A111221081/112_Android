@@ -1,6 +1,7 @@
 package com.example.hwmiddle;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,7 +10,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity2 extends AppCompatActivity {
-    private TextView textEdit,textText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,10 +21,8 @@ public class MainActivity2 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
 
-
-            textText = (TextView) findViewById(R.id.textText);
-            String textviewString = (String)getIntent().getExtras().getString("textview");
-            textText.setText(textviewString);
         });
+        TextView textView = findViewById(R.id.TextView);
+        textView.setText(MainActivity.lasttxt);
     }
 }
